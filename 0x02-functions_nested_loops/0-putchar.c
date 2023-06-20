@@ -1,20 +1,24 @@
-#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 /**
- * main - print _putchar
- * 
- * Return: 0
+ * main - main block
+ *
+ * Return: 0.
  */
-
 int main(void)
+
 {
-_putchar('_');
-_putchar('p');
-_putchar('u');
-_putchar('t');
-_putchar('c');
-_putchar('h');
-_putchar('a');
-_putchar('r');
-_putchar('\n');
-return (0);
+	int c = 0;
+	int sum = 0;
+
+	while (c < 1024)
+	{
+		if (c % 3 == 0 || c % 5 == 0)
+		{
+			sum += c;
+		}
+		c++;
+	}
+	printf("%i\n", sum);
+	return (0);
 }
